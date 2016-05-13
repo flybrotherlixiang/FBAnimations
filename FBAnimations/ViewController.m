@@ -7,8 +7,12 @@
 //
 
 #import "ViewController.h"
+#import "FBLoadingLayer.h"
 
 @interface ViewController ()
+
+@property (nonatomic) CALayer *aLayer;
+@property (nonatomic) UIView *aView;
 
 @end
 
@@ -16,16 +20,23 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    UIButton *button = [[UIButton alloc] init];
+    [button addTarget:self action:@selector(trigger) forControlEvents:UIControlEventTouchUpInside];
+    [button setTitle:@"trigger" forState:UIControlStateNormal];
+    [button setTitleColor:[UIColor grayColor] forState:UIControlStateNormal];
+    button.frame = CGRectMake([UIScreen mainScreen].bounds.size.width - 100, 30, 100, 50);
+    [self.view addSubview:button];
+}
+
+- (void)trigger
+{
+    [self addALoadingLogo];
 }
 
 - (void)addALoadingLogo
 {
-    CALayer *aLayer = [[CALayer alloc] init];
-    
-    CABasicAnimation *animation = [[CABasicAnimation alloc] init];
-    animation.keyPath = @"path";
-    animation.fromValue = 
+    [self.view.layer addSublayer:[FBLoadingLayer loadingLayerWithType:FBThreeDotsLoadingLayerType frame:CGRectMake(150, 150, 200, 200)]];
 }
 
 @end

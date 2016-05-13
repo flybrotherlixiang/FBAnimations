@@ -13,6 +13,9 @@
 		53FEB1F91CE5A3C800BDF9E5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53FEB1F71CE5A3C800BDF9E5 /* Main.storyboard */; };
 		53FEB1FB1CE5A3C800BDF9E5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 53FEB1FA1CE5A3C800BDF9E5 /* Assets.xcassets */; };
 		53FEB1FE1CE5A3C800BDF9E5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53FEB1FC1CE5A3C800BDF9E5 /* LaunchScreen.storyboard */; };
+		53FEB2081CE5B18700BDF9E5 /* FBThreeDotsLoadingLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 53FEB2071CE5B18700BDF9E5 /* FBThreeDotsLoadingLayer.m */; };
+		53FEB20B1CE5B19900BDF9E5 /* FBAnimationLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 53FEB20A1CE5B19900BDF9E5 /* FBAnimationLayer.m */; };
+		53FEB20E1CE5B1CE00BDF9E5 /* FBLoadingLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 53FEB20D1CE5B1CE00BDF9E5 /* FBLoadingLayer.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,12 @@
 		53FEB1FA1CE5A3C800BDF9E5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		53FEB1FD1CE5A3C800BDF9E5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		53FEB1FF1CE5A3C800BDF9E5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		53FEB2061CE5B18700BDF9E5 /* FBThreeDotsLoadingLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBThreeDotsLoadingLayer.h; sourceTree = "<group>"; };
+		53FEB2071CE5B18700BDF9E5 /* FBThreeDotsLoadingLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBThreeDotsLoadingLayer.m; sourceTree = "<group>"; };
+		53FEB2091CE5B19900BDF9E5 /* FBAnimationLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBAnimationLayer.h; sourceTree = "<group>"; };
+		53FEB20A1CE5B19900BDF9E5 /* FBAnimationLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBAnimationLayer.m; sourceTree = "<group>"; };
+		53FEB20C1CE5B1CE00BDF9E5 /* FBLoadingLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBLoadingLayer.h; sourceTree = "<group>"; };
+		53FEB20D1CE5B1CE00BDF9E5 /* FBLoadingLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBLoadingLayer.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +67,7 @@
 		53FEB1ED1CE5A3C800BDF9E5 /* FBAnimations */ = {
 			isa = PBXGroup;
 			children = (
+				53FEB2051CE5B13B00BDF9E5 /* Layers */,
 				53FEB1F11CE5A3C800BDF9E5 /* AppDelegate.h */,
 				53FEB1F21CE5A3C800BDF9E5 /* AppDelegate.m */,
 				53FEB1F41CE5A3C800BDF9E5 /* ViewController.h */,
@@ -77,6 +87,19 @@
 				53FEB1EF1CE5A3C800BDF9E5 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		53FEB2051CE5B13B00BDF9E5 /* Layers */ = {
+			isa = PBXGroup;
+			children = (
+				53FEB2091CE5B19900BDF9E5 /* FBAnimationLayer.h */,
+				53FEB20A1CE5B19900BDF9E5 /* FBAnimationLayer.m */,
+				53FEB20C1CE5B1CE00BDF9E5 /* FBLoadingLayer.h */,
+				53FEB20D1CE5B1CE00BDF9E5 /* FBLoadingLayer.m */,
+				53FEB2061CE5B18700BDF9E5 /* FBThreeDotsLoadingLayer.h */,
+				53FEB2071CE5B18700BDF9E5 /* FBThreeDotsLoadingLayer.m */,
+			);
+			name = Layers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -149,7 +172,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				53FEB20E1CE5B1CE00BDF9E5 /* FBLoadingLayer.m in Sources */,
 				53FEB1F61CE5A3C800BDF9E5 /* ViewController.m in Sources */,
+				53FEB2081CE5B18700BDF9E5 /* FBThreeDotsLoadingLayer.m in Sources */,
+				53FEB20B1CE5B19900BDF9E5 /* FBAnimationLayer.m in Sources */,
 				53FEB1F31CE5A3C800BDF9E5 /* AppDelegate.m in Sources */,
 				53FEB1F01CE5A3C800BDF9E5 /* main.m in Sources */,
 			);
