@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "FBLoadingLayer.h"
+#import "FBPendulumsLoadingLayer.h"
 
 @interface ViewController ()
 
@@ -36,7 +37,8 @@
 
 - (void)addALoadingLogo
 {
-    [self.view.layer addSublayer:[FBLoadingLayer loadingLayerWithType:FBThreeDotsLoadingLayerType frame:CGRectMake(150, 150, 200, 200)]];
+//    [self.view.layer addSublayer:[FBLoadingLayer loadingLayerWithType:FBThreeDotsLoadingLayerType frame:CGRectMake(150, 150, 200, 200)]];
+    [self.view.layer addSublayer:[FBPendulumsLoadingLayer loadingLayerWithFrame:CGRectMake(150, 150, 200, 200) ballsCount:5]];
 }
 
 @end

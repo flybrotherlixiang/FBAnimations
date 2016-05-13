@@ -16,6 +16,7 @@
 		53FEB2081CE5B18700BDF9E5 /* FBThreeDotsLoadingLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 53FEB2071CE5B18700BDF9E5 /* FBThreeDotsLoadingLayer.m */; };
 		53FEB20B1CE5B19900BDF9E5 /* FBAnimationLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 53FEB20A1CE5B19900BDF9E5 /* FBAnimationLayer.m */; };
 		53FEB20E1CE5B1CE00BDF9E5 /* FBLoadingLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 53FEB20D1CE5B1CE00BDF9E5 /* FBLoadingLayer.m */; };
+		53FEB2111CE5C05A00BDF9E5 /* FBPendulumsLoadingLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 53FEB2101CE5C05A00BDF9E5 /* FBPendulumsLoadingLayer.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,8 @@
 		53FEB20A1CE5B19900BDF9E5 /* FBAnimationLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBAnimationLayer.m; sourceTree = "<group>"; };
 		53FEB20C1CE5B1CE00BDF9E5 /* FBLoadingLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBLoadingLayer.h; sourceTree = "<group>"; };
 		53FEB20D1CE5B1CE00BDF9E5 /* FBLoadingLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBLoadingLayer.m; sourceTree = "<group>"; };
+		53FEB20F1CE5C05A00BDF9E5 /* FBPendulumsLoadingLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBPendulumsLoadingLayer.h; sourceTree = "<group>"; };
+		53FEB2101CE5C05A00BDF9E5 /* FBPendulumsLoadingLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBPendulumsLoadingLayer.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +101,8 @@
 				53FEB20D1CE5B1CE00BDF9E5 /* FBLoadingLayer.m */,
 				53FEB2061CE5B18700BDF9E5 /* FBThreeDotsLoadingLayer.h */,
 				53FEB2071CE5B18700BDF9E5 /* FBThreeDotsLoadingLayer.m */,
+				53FEB20F1CE5C05A00BDF9E5 /* FBPendulumsLoadingLayer.h */,
+				53FEB2101CE5C05A00BDF9E5 /* FBPendulumsLoadingLayer.m */,
 			);
 			name = Layers;
 			sourceTree = "<group>";
@@ -175,6 +180,7 @@
 				53FEB20E1CE5B1CE00BDF9E5 /* FBLoadingLayer.m in Sources */,
 				53FEB1F61CE5A3C800BDF9E5 /* ViewController.m in Sources */,
 				53FEB2081CE5B18700BDF9E5 /* FBThreeDotsLoadingLayer.m in Sources */,
+				53FEB2111CE5C05A00BDF9E5 /* FBPendulumsLoadingLayer.m in Sources */,
 				53FEB20B1CE5B19900BDF9E5 /* FBAnimationLayer.m in Sources */,
 				53FEB1F31CE5A3C800BDF9E5 /* AppDelegate.m in Sources */,
 				53FEB1F01CE5A3C800BDF9E5 /* main.m in Sources */,

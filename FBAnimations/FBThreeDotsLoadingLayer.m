@@ -27,14 +27,12 @@
     CGFloat dotsDistance = [self defaultDotsDistance];
     CGFloat firstDotX = frame.size.width / 2 - 1.5 * dotsMaximumSize - dotsDistance;
     CGFloat firstDotY = frame.size.height / 2 - dotsMaximumSize / 2;
-    NSMutableArray *dots = [NSMutableArray array];
     for (int i = 0; i < 3; i++) {
         CALayer *dot = [[CALayer alloc] init];
         dot.backgroundColor = dotsColor;
         dot.frame = CGRectMake(firstDotX + i * (dotsMaximumSize + dotsDistance), firstDotY, dotsMinimumSize, dotsMinimumSize);
         dot.cornerRadius = dotsMinimumSize / 2;
         [self addAnimationToDot:dot beginTime:0.25 * i];
-        [dots addObject:dot];
         [layer addSublayer:dot];
     }
     
